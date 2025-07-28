@@ -1,0 +1,64 @@
+// ### TOP and LEFT PANEL ## //
+
+[{
+"name": "top-bar",
+"include": [
+  "$HOME/.config/waybar/ModulesSeparator",
+  "$HOME/.config/waybar/ModulesTop"
+  ],
+"layer": "top",
+//"mode": "dock",
+"exclusive": true,
+"passthrough": false,
+"position": "top",
+"spacing": 3,
+"fixed-center": true,
+"ipc": true,
+    
+"modules-left": [
+	"custom/menu",
+  "custom/separator#line",
+  "cpu",
+  "custom/separator#line",
+  "memory",
+],
+    
+"modules-center": [
+  "clock"
+],
+
+"modules-right": [
+  	"network",
+    "custom/separator#line",
+  	"bluetooth",
+    "custom/separator#line",
+    "pulseaudio",
+    "custom/separator#line",
+    "battery"
+    ]
+},
+
+
+{
+"name": "left-bar",
+"include": [
+  "$HOME/.config/waybar/ModulesLeft",
+  ],
+"layer": "top",
+"position": "left",
+"margin-left": 8,
+"spacing": 3,
+"fixed-center": true,
+"ipc": true,
+//"gtk-layer-shell": true,
+
+"modules-left": [],
+    
+
+"modules-center": [
+    "hyprland/workspaces"
+  ],
+
+"modules-right": []
+
+}]
